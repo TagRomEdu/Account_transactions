@@ -66,5 +66,6 @@ def output_info(ops_list: list[dict]) -> str:
         if ops_list[i].get('from') is not None:
             from_info = convert_num(ops_list[i].get('from'))
             info_list.append(f"{date} {desc} \n{from_info} -> {to_info} \n{get_amount(ops_list[i])}")
-        info_list.append(f"{date} {desc} \n-> {to_info} \n{get_amount(ops_list[i])}")
+        else:
+            info_list.append(f"{date} {desc} \n-> {to_info} \n{get_amount(ops_list[i])}")
     return '\n\n'.join(info_list)
