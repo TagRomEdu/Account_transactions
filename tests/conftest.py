@@ -6,8 +6,8 @@ def operations():
     return [
         {
             "id": 441945886,
-            "state": "EXECUTED",
-            "date": "2019-08-26T10:50:58.294041",
+            "state": "CANCELED",
+            "date": "2019",
             "operationAmount": {
                 "amount": "31957.58",
                 "currency": {
@@ -22,7 +22,7 @@ def operations():
         {
             "id": 41428829,
             "state": "EXECUTED",
-            "date": "2019-07-03T18:35:29.512364",
+            "date": "2020",
             "operationAmount": {
                 "amount": "8221.37",
                 "currency": {
@@ -37,7 +37,7 @@ def operations():
         {
             "id": 939719570,
             "state": "EXECUTED",
-            "date": "2018-06-30T02:08:58.425572",
+            "date": "2021",
             "operationAmount": {
                 "amount": "9824.07",
                 "currency": {
@@ -52,7 +52,7 @@ def operations():
         {
             "id": 587085106,
             "state": "EXECUTED",
-            "date": "2018-03-23T10:45:06.972075",
+            "date": "2022",
             "operationAmount": {
                 "amount": "48223.05",
                 "currency": {
@@ -66,7 +66,7 @@ def operations():
         {
             "id": 142264268,
             "state": "EXECUTED",
-            "date": "2019-04-04T23:20:05.206878",
+            "date": "2018",
             "operationAmount": {
                 "amount": "79114.93",
                 "currency": {
@@ -81,7 +81,7 @@ def operations():
         {
             "id": 873106923,
             "state": "EXECUTED",
-            "date": "2019-03-23T01:09:46.296404",
+            "date": "2027",
             "operationAmount": {
                 "amount": "43318.34",
                 "currency": {
@@ -96,7 +96,7 @@ def operations():
         {
             "id": 214024827,
             "state": "EXECUTED",
-            "date": "2018-12-20T16:43:26.929246",
+            "date": "2026",
             "operationAmount": {
                 "amount": "70946.18",
                 "currency": {
@@ -111,7 +111,7 @@ def operations():
         {
             "id": 522357576,
             "state": "EXECUTED",
-            "date": "2019-07-12T20:41:47.882230",
+            "date": "2025",
             "operationAmount": {
                 "amount": "51463.70",
                 "currency": {
@@ -126,7 +126,7 @@ def operations():
         {
             "id": 895315941,
             "state": "EXECUTED",
-            "date": "2018-08-19T04:27:37.904916",
+            "date": "2024",
             "operationAmount": {
                 "amount": "56883.54",
                 "currency": {
@@ -141,7 +141,7 @@ def operations():
         {
             "id": 596171168,
             "state": "EXECUTED",
-            "date": "2018-07-11T02:26:18.671407",
+            "date": "2023",
             "operationAmount": {
                 "amount": "79931.03",
                 "currency": {
