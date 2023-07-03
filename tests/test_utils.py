@@ -1,5 +1,6 @@
 from settings import OPERATIONS_PATH
-from app.utils import convert_date, get_operations, get_executed_ops, sort_list_of_5, convert_num, get_amount
+from app.utils import convert_date, get_operations, get_executed_ops,\
+    sort_list_of_5, convert_num, get_amount, output_info
 
 
 def test_convert_date():
@@ -11,17 +12,19 @@ def test_get_operations():
 
 
 def test_get_executed_ops(operations):
-    assert(get_executed_ops(operations)) == operations[1:]
+    assert get_executed_ops(operations) == operations[1:]
 
 
 def test_sort_list_of_5(operations):
-    assert(sort_list_of_5(operations)) == operations[5:]
+    assert sort_list_of_5(operations) == operations[5:]
 
 def test_convert_num():
-    assert(convert_num('Visa Platinum 1246377376343588')) == 'Visa Platinum 1246 37** **** 3588'
-    assert(convert_num("Счет 14211924144426031657")) == 'Счет **1657'
+    assert convert_num('Visa Platinum 1246377376343588') == 'Visa Platinum 1246 37** **** 3588'
+    assert convert_num("Счет 14211924144426031657") == 'Счет **1657'
 
 def test_get_amount(operation_dict):
-    assert(get_amount(operation_dict)) == "77751.04 руб."
+    assert get_amount(operation_dict)  == "77751.04 руб."
 
 
+def test_output_info():
+    assert isinstance(output_info(sort_list_of_5(get_executed_ops(get_operations(OPERATIONS_PATH)))), str)
