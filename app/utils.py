@@ -42,7 +42,7 @@ def convert_num(str_data: str) -> str:
         a = lst[-1][:4]
         b = lst[-1][4:6]
         c = lst[-1][-4:]
-        return f"{lst[0]} {a} {b}** **** {c}"
+        return f"{' '.join(lst[:-1])} {a} {b}** **** {c}"
     else:
         return f"{lst[0]} **{lst[-1][-4:]}"
 
