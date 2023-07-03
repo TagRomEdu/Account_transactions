@@ -7,7 +7,7 @@ def operations():
         {
             "id": 441945886,
             "state": "CANCELED",
-            "date": "2019",
+            "date": "2019-08-26T10:50:58.294041",
             "operationAmount": {
                 "amount": "31957.58",
                 "currency": {
