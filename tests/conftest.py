@@ -153,3 +153,19 @@ def operations():
             "to": "Счет 72082042523231456215"
         }
     ]
+
+
+@pytest.fixture
+def operation_dict():
+    return {
+        "id": 615064591,
+        "state": "CANCELED",
+        "date": "2018-10-14T08:21:33.419441",
+        "operationAmount": {
+            "amount": "77751.04",
+            "currency": {
+                "name": "руб.",
+                "code": "RUB"
+            }
+        }
+    }
