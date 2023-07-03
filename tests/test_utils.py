@@ -1,5 +1,5 @@
 from settings import OPERATIONS_PATH
-from app.utils import convert_date, get_operations, get_executed_ops, sort_list_of_5, convert_num
+from app.utils import convert_date, get_operations, get_executed_ops, sort_list_of_5, convert_num, get_amount
 
 
 def test_convert_date():
@@ -20,3 +20,8 @@ def test_sort_list_of_5(operations):
 def test_convert_num():
     assert(convert_num('Visa Platinum 1246377376343588')) == 'Visa Platinum 1246 37** **** 3588'
     assert(convert_num("Счет 14211924144426031657")) == 'Счет **1657'
+
+def test_get_amount(operation_dict):
+    assert(get_amount(operation_dict)) == "77751.04 руб."
+
+
